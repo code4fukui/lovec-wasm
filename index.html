@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<title>wasm in C test</title>
+</head><body>
+<h1>wasm in C test</h1>
+param: <input id=ininput><br>
+<button id=btn>call love(param)</button><br>
+output: <span id=divoutput></span><br>
+<hr>
+<a href=https://github.com/code4fukui/lovec-wasm>src on GitHub</a>
+
+<script type="module">
+const fn = "love.wasm";
+const wasmbin = new Uint8Array(await (await fetch(fn)).arrayBuffer());
+const wasm = await WebAssembly.instantiate(wasmbin);
+const love = wasm.instance.exports.love;
+
+btn.onclick = () => {
+  divoutput.textContent = love(ininput.value);
+};
+</script>
+
+<style>
+body {
+  text-align: center;
+}
+* {
+  margin: 1em;
+}
+</style>
+</body></html>
