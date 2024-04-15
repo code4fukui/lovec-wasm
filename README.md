@@ -11,7 +11,7 @@ WebAssembly(wasm) test in C
 
 edit [love.c](love.c)
 ```
-make clean; make
+sh c.sh
 deno run -A love.js
 ```
 or open [index.html](https://code4fukui.github.io/lovec-wasm/) on your browser
