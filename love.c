@@ -1,3 +1,8 @@
+extern void putchar(int n);
+
 int love(int param) {
-  return param + 1;
+  putchar(65);
+  putchar(66);
+  putchar(67);
+  return 0;
 }
