@@ -4,7 +4,9 @@
 <h1>wasm in C test</h1>
 param: <input id=ininput><br>
 <button id=btn>call love(param)</button><br>
+<button id=btn2>call love2(param)</button><br>
 output: <textarea id=taoutput></textarea><br>
+return: <span id=spanret></span><br>
 <hr>
 <a href=https://github.com/code4fukui/lovec-wasm>src on GitHub</a>
 
@@ -21,9 +23,13 @@ const importObject = {
 };
 const wasm = await WebAssembly.instantiate(wasmbin, importObject);
 const love = wasm.instance.exports.love;
+const love2 = wasm.instance.exports.love2;
 
 btn.onclick = () => {
-  love(ininput.value);
+  spanret.textContent = love(ininput.value);
+};
+btn2.onclick = () => {
+  spanret.textContent = love2(ininput.value);
 };
 </script>
 

@@ -9,5 +9,7 @@ const importObject = {
 };
 const wasm = await WebAssembly.instantiate(wasmbin, importObject);
 const love = wasm.instance.exports.love;
+const love2 = wasm.instance.exports.love2;
 
 console.log(love(Deno.args[0]));
+console.log(love2(Deno.args[0]));
