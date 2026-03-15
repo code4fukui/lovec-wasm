@@ -1,9 +1,8 @@
 # lovec-wasm
 
-WebAssembly (wasm) test in C.
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
 
-## Demo
-You can run the demo at [https://code4fukui.github.io/lovec-wasm/](https://code4fukui.github.io/lovec-wasm/).
+WebAssembly (wasm) test in C.
 
 ## Features
 - WebAssembly (wasm) example in C
