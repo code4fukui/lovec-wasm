@@ -22,4 +22,4 @@ WebAssembly (wasm) test in C.
 3. Or, open the [index.html](https://code4fukui.github.io/lovec-wasm/) file in your browser.
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+MIT License — see [LICENSE](LICENSE).

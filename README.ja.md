@@ -2,12 +2,9 @@
 
 Cで実装したWebAssembly (wasm)のテストプロジェクトです。
 
-## デモ
-[https://code4fukui.github.io/lovec-wasm/](https://code4fukui.github.io/lovec-wasm/)でデモを確認できます。
-
 ## 機能
 - Cで書かれたコードをWebAssemblyにコンパイルし、ブラウザで実行する
-- 引数を渡して関数を呼び出し、結果を表示する
+- 引数を渡して、1を加える関数を呼び出し、結果を表示する
 
 ## 必要環境
 - [clang](https://students-tech.blog/post/install-clang.html)
